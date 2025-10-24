@@ -8,6 +8,8 @@ A Firefox extension that copies permanent Gmail message URLs to your clipboard.
 - Works with Gmail's universal message URLs (format: `https://mail.google.com/mail/u/0/#all/MESSAGE_ID`)
 - Visual notification when URL is copied successfully
 
+> **Note:** This extension has only been tested on Linux. While it should work on other platforms, your experience may vary.
+
 ## Installation
 
 ### Method 1: Install from GitHub Releases (Recommended)
