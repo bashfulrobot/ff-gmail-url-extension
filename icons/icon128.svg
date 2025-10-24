@@ -1,0 +1,10 @@
+
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Envelope -->
+  <rect x="8" y="32" width="112" height="80" rx="8" fill="#4285f4" stroke="#1a73e8" stroke-width="4"/>
+  <path d="M8 40l56 40 56-40" stroke="#ffffff" stroke-width="8" fill="none"/>
+  
+  <!-- HTTPS overlay -->
+  <rect x="72" y="8" width="48" height="32" rx="4" fill="#ffffff" stroke="#1a73e8" stroke-width="2"/>
+  <text x="96" y="28" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#1a73e8">https</text>
+</svg>
