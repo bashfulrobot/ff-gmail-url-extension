@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Gmail Universal URL",
+  "version": "1.0.0",
+  "description": "Extract Gmail message IDs and create universal URLs that work regardless of label or folder location",
+  "icons": {
+    "48": "logos/gmailUrlLogo.png",
+    "96": "logos/gmailUrlLogo.png"
+  },
+  "permissions": [
+    "clipboardWrite",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "commands": {
+    "copy-universal-url": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U"
+      },
+      "description": "Copy universal Gmail URL to clipboard"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "gmail-universal-url@example.com",
+      "strict_min_version": "57.0"
+    }
+  }
+}
