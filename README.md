@@ -10,7 +10,17 @@ A Firefox extension that copies permanent Gmail message URLs to your clipboard.
 
 ## Installation
 
-### Method 1: Temporary Installation (Development)
+### Method 1: Install from GitHub Releases (Recommended)
+
+1. Download the latest `.xpi` file from the [Releases page](https://github.com/bashfulrobot/ff-gmail-url-extension/releases)
+2. Open Firefox and navigate to `about:addons`
+3. Click the gear icon ⚙️
+4. Select "Install Add-on From File..."
+5. Select the downloaded `.xpi` file
+
+**Note:** Firefox Developer Edition or Nightly may require disabling signature verification in `about:config` by setting `xpinstall.signatures.required` to `false`.
+
+### Method 2: Temporary Installation (Development)
 
 1. Open Firefox and navigate to `about:debugging`
 2. Click "This Firefox" in the left sidebar
@@ -19,7 +29,7 @@ A Firefox extension that copies permanent Gmail message URLs to your clipboard.
 
 **Note:** Temporary installations are removed when Firefox restarts.
 
-### Method 2: Permanent Installation (Sideloading)
+### Method 3: Build and Install Locally (Sideloading)
 
 #### Prerequisites (Firefox Developer Edition or Nightly only)
 1. Navigate to `about:config` in Firefox
